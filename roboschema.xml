@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+<!-- 'version' attribute for extension tag is no longer used -->
+
+    <name>Robo Schema</name>
+    <!-- The following elements are optional and free of formatting constraints -->
+    <creationDate>October 2023</creationDate>
+    <!-- Dummy author, feel free to replace anywhere you see it-->
+    <author>Proxor</author>
+    <authorUrl>https://my.com</authorUrl>
+    <copyright>Proxor</copyright>
+    <license>GPL v3</license>
+    <!--  The version string is recorded in the components table -->
+    <version>0.0.17</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>
+        Robo Schema component
+    </description>
+
+    <!-- This is the PHP namespace under which the extension's
+    code is organised. It should follow this format:
+    
+    Vendor\Component\ComponentName
+
+    "Vendor" can be your company or your own name
+    
+    The "ComponentName" section MUST match the name used 
+    everywhere else for your component. Whatever the name of 
+    this XML file is, the namespace must match (ignoring CamelCase). 
+    -->
+    <namespace path="src/">Proxor\Component\RoboSchema</namespace>
+
+    <files folder="site/">
+		<folder>language</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+	
+    <languages>
+        <language tag="en-GB">site/language/en-GB/en-GB.com_roboschema.ini</language>
+        <language tag="ru-RU">site/language/ru-RU/ru-RU.com_roboschema.ini</language>
+    </languages>
+	
+    <administration>
+        <!-- The link that will appear in the Admin panel's "Components" menu -->
+        <menu link="index.php?option=com_roboschema">Схем.Робот</menu>
+        <!-- List of files and folders to copy. Note the 'folder' attribute.
+             This is the name of the folder in your component package to copy FROM -->
+        <files folder="admin/">
+			<folder>language</folder>
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+        </files>
+		
+		<languages>
+			<language tag="en-GB">admin/language/en-GB/en-GB.com_roboschema.ini</language>
+			<language tag="ru-RU">admin/language/ru-RU/ru-RU.com_roboschema.ini</language>
+			<language tag="en-GB">admin/language/en-GB/en-GB.com_roboschema.sys.ini</language>
+			<language tag="ru-RU">admin/language/ru-RU/ru-RU.com_roboschema.sys.ini</language>
+		</languages>
+		
+	</administration>
+
+</extension>

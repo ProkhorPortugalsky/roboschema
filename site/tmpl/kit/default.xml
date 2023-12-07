@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_ROBOSCHEMA_MENU_ROBO_SCHEMA_TITLE">
+        <message><![CDATA[COM_ROBOSCHEMA_MENU_ROBO_SCHEMA_DESC]]></message>
+    </layout>
+	<fields name="request">
+        <fieldset name="request">
+            <field  name="kitId"
+                    type="number"
+                    label="COM_ROBOSCHEMA_MENU_ROBO_SCHEMA_PARAM_LABEL"
+                    description="COM_ROBOSCHEMA_MENU_ROBO_SCHEMA_PARAM_DESC"
+                    default="1">
+            </field>
+        </fieldset>
+    </fields>
+</metadata>
